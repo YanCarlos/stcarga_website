@@ -1,0 +1,38 @@
+/***************************
+    Responsive Variables
+***************************/
+
+$Tablet-min: 768px;
+$Tablet-max: 1024px;
+$Mobile-min: 320px;
+$Mobile-max: 767px;
+$Medium-device-min: 1020px;
+$Mediun-device-max: 1340px;
+
+/***************************
+   Mixins for screen size
+***************************/
+
+@mixin mobile {
+  @media (min-width: #{$Mobile-min}) and (max-width: #{$Mobile-max}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$Tablet-min}) and (max-width: #{$Tablet-max}) {
+    @content;
+  }
+}
+
+@mixin medium-device {
+  @media (min-width: #{$Medium-device-min}) and (max-width: #{$Mediun-device-max}) {
+    @content;
+  }
+}
+
+@mixin desktop{
+  @media (min-width: #{$Tablet-max}){
+    @content;
+  }
+}

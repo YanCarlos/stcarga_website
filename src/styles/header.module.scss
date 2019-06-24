@@ -1,0 +1,61 @@
+@import "./variables/mixins.scss";
+
+.container {
+  top: 20px;
+  z-index: 1999;
+  position: absolute;
+  width: 100%;
+  @include mobile{
+    padding: 0;
+    top: 0;
+  }
+
+  @include tablet {
+    top: 0;
+  }
+}
+
+.logo{
+  width: 150px;
+}
+
+.navLink {
+  color: #343434 !important;
+  opacity: 0.8;
+}
+
+.navLink:hover {
+  color: #f89d13 !important;
+}
+
+.navbar {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 15px 20px !important;
+  margin: auto;
+  width: 80%;
+  @include mobile{
+    width: 92%;
+    margin-top: 20px;
+  }
+
+  @include tablet{
+    width: 95%;
+    margin-top: 20px;
+  }
+}
+
+.nav {
+  width: 40%;
+  margin-left: auto;
+  justify-content: space-between;
+
+  @include mobile {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  @include tablet {
+    width: 80%;
+  }
+}

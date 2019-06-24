@@ -1,3 +1,12 @@
-import React from "react"
+import React from "react";
+import Home from '../components/home';
+import Header from '../components/header'
 
-export default () => <div>Hello world!</div>
+const App = () => (
+	<div>
+		<Header/>
+		<Home/>
+	</div>
+);
+
+export default App;
